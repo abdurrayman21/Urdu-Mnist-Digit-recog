@@ -9,8 +9,6 @@ This project implements a machine learning model to recognize and classify handw
 - [Getting Started](#getting-started)
 - [Model Architecture](#model-architecture)
 - [Training and Evaluation](#training-and-evaluation)
-- [Results](#results)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Overview
@@ -28,9 +26,23 @@ The dataset can be downloaded from [Link to Dataset Source] (update this link as
 
 ## Getting Started
 
+## Model Architechure
+The model is based on a Convolutional Neural Network (CNN), optimized for image classification tasks. Key layers include:
+
+Convolutional Layers: Extracts image features with filters.
+Pooling Layers: Reduces dimensionality, capturing essential features.
+Fully Connected Layers: Combines extracted features to make predictions.
+
+## Training and Evaluation
+Open the notebooks/ folder and run Urdu_MNIST_Training.ipynb to preprocess data, train the model, and evaluate results.
+1 - Training parameters, such as batch size and number of epochs, can be adjusted in the notebook.
+2 - The model is evaluated using metrics including accuracy, precision, recall, and F1 score. A confusion matrix is also generated to visualize classification performance.
+
 ### Prerequisites
 - Python 3.7+
 - Jupyter Notebook (optional)
 - TensorFlow / Keras
 - Numpy, Pandas, Matplotlib, Seaborn
-
+  
+## License 
+This project is licensed under the MIT License
